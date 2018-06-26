@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <h1>
+        <span style="color: #b22222">Lab:</span><span style="color: #db7093">Pixel</span>
+        <span  style="color: #ff7f50">Art</span><span style="color: #ff00ff">Maker</span>
+        </h1>
+
+    <p> <em><span style="color: #191970">Input values between 1 and 100</span> </em></p>
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        <span  style="color: #000080">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" max= "100" value="1">
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" max= "100" value="1">
+        <button id="submit" type= "button" onclick= "makeGrid()">Submit</button>
+        <button type="reset" onclick="restore()">Reset</button> </span>
+    </form>
+
+<div class= "" id="error"></div>
+    <h2>Pick A Color</h2>
+<input type="color" id="colorPicker" value= "#000000">
+
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table>
+
+    <script src="pixeldesigns.js"></script>
+</body>
+</html>
