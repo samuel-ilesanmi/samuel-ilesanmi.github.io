@@ -40,7 +40,7 @@ $(document).on("mousedown", "tr td", function () {
         $('td').unbind('mousemove');
     });
     $('tr td').on('dblclick',function () {
-        $(this).css('background-color', "#fff8dc")
+        $(this).css('background-color', "#c0c0c0")
     })
 });
 reset = $("#pixel_canvas").html();
